@@ -1,6 +1,6 @@
 'use client';
 
-import { CollegeFilters, LocationSearch, Region } from '@/types/college';
+import { CollegeFilters, LocationSearch, Region, AppMode } from '@/types/college';
 import LocationSearchPanel from './LocationSearchPanel';
 
 interface FilterPanelProps {
@@ -8,6 +8,7 @@ interface FilterPanelProps {
   conferences: string[];
   availableStates: string[];
   onFiltersChange: (filters: CollegeFilters) => void;
+  mode: AppMode;
 }
 
 const REGIONS: Region[] = ['Northeast', 'Southeast', 'Midwest', 'Southwest', 'West'];
@@ -30,7 +31,8 @@ export default function FilterPanel({
   filters,
   conferences,
   availableStates,
-  onFiltersChange
+  onFiltersChange,
+  mode,
 }: FilterPanelProps) {
   const divisions: ("D1" | "D2" | "D3")[] = ['D1', 'D2', 'D3'];
 
@@ -117,7 +119,7 @@ export default function FilterPanel({
             </svg>
             <input
               type="text"
-              placeholder="Search by school name"
+              placeholder={mode === 'ecnl' ? 'Search by club name' : 'Search by school name'}
               value={filters.searchQuery}
               onChange={(e) => onFiltersChange({ ...filters, searchQuery: e.target.value })}
               className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -125,91 +127,97 @@ export default function FilterPanel({
           </div>
         </div>
 
-        {/* Division toggles */}
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-600 font-medium">Division:</span>
-          {divisions.map(div => (
-            <button
-              key={div}
-              onClick={() => toggleDivision(div)}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                filters.divisions.includes(div)
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
+        {/* Division toggles — hidden in ECNL mode */}
+        {mode !== 'ecnl' && (
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-600 font-medium">Division:</span>
+            {divisions.map(div => (
+              <button
+                key={div}
+                onClick={() => toggleDivision(div)}
+                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                  filters.divisions.includes(div)
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                {div}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Region dropdown — hidden in ECNL mode */}
+        {mode !== 'ecnl' && (
+          <div className="relative">
+            <select
+              value=""
+              onChange={(e) => {
+                if (e.target.value) {
+                  toggleRegion(e.target.value as Region);
+                }
+              }}
+              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
             >
-              {div}
-            </button>
-          ))}
-        </div>
-
-        {/* Region dropdown */}
-        <div className="relative">
-          <select
-            value=""
-            onChange={(e) => {
-              if (e.target.value) {
-                toggleRegion(e.target.value as Region);
-              }
-            }}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-          >
-            <option value="">
-              {filters.regions.length > 0
-                ? `${filters.regions.length} region${filters.regions.length > 1 ? 's' : ''}`
-                : 'All Regions'
-              }
-            </option>
-            {REGIONS.map(region => (
-              <option key={region} value={region}>
-                {filters.regions.includes(region) ? '✓ ' : ''}{region}
+              <option value="">
+                {filters.regions.length > 0
+                  ? `${filters.regions.length} region${filters.regions.length > 1 ? 's' : ''}`
+                  : 'All Regions'
+                }
               </option>
-            ))}
-          </select>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
+              {REGIONS.map(region => (
+                <option key={region} value={region}>
+                  {filters.regions.includes(region) ? '✓ ' : ''}{region}
+                </option>
+              ))}
+            </select>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        )}
 
-        {/* State dropdown - shows all states or filtered by region */}
-        <div className="relative">
-          <select
-            value=""
-            onChange={(e) => {
-              if (e.target.value) {
-                toggleState(e.target.value);
-              }
-            }}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-          >
-            <option value="">
-              {filters.states.length > 0
-                ? `${filters.states.length} state${filters.states.length > 1 ? 's' : ''}`
-                : 'All States'
-              }
-            </option>
-            {availableStates.map(state => (
-              <option key={state} value={state}>
-                {filters.states.includes(state) ? '✓ ' : ''}{STATE_NAMES[state] || state}
+        {/* State dropdown — hidden in ECNL mode */}
+        {mode !== 'ecnl' && (
+          <div className="relative">
+            <select
+              value=""
+              onChange={(e) => {
+                if (e.target.value) {
+                  toggleState(e.target.value);
+                }
+              }}
+              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="">
+                {filters.states.length > 0
+                  ? `${filters.states.length} state${filters.states.length > 1 ? 's' : ''}`
+                  : 'All States'
+                }
               </option>
-            ))}
-          </select>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
+              {availableStates.map(state => (
+                <option key={state} value={state}>
+                  {filters.states.includes(state) ? '✓ ' : ''}{STATE_NAMES[state] || state}
+                </option>
+              ))}
+            </select>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        )}
 
         {/* Conference dropdown */}
         <div className="relative">

@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
-import { College, CollegeFilters, Region } from '@/types/college';
+import { College, CollegeFilters, Region, AppMode } from '@/types/college';
 import { haversineDistance } from '@/lib/geo';
 import CollegeList from '@/components/sidebar/CollegeList';
 import FilterPanel from '@/components/sidebar/FilterPanel';
@@ -42,7 +42,9 @@ const STATE_TO_REGION: Record<string, Region> = {
 };
 
 export default function Home() {
+  const [mode, setMode] = useState<AppMode>('collegiate');
   const [colleges, setColleges] = useState<College[]>([]);
+  const [ecnlClubs, setEcnlClubs] = useState<College[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -58,19 +60,45 @@ export default function Home() {
     locationSearch: null,
   });
 
-  // Fetch colleges from API
+  // Active dataset based on mode
+  const activeDataset = mode === 'ecnl' ? ecnlClubs : colleges;
+
+  // Switch mode handler
+  const switchMode = useCallback((newMode: AppMode) => {
+    if (newMode === mode) return;
+    setMode(newMode);
+    setSelectedId(null);
+    setHoveredId(null);
+    setSelectedCollegeIds(new Set());
+    setFilters({
+      divisions: newMode === 'ecnl' ? ['ECNL'] : ['D1'],
+      conferences: [],
+      regions: [],
+      states: [],
+      searchQuery: '',
+      locationSearch: null,
+    });
+  }, [mode]);
+
+  // Fetch colleges and ECNL clubs from API
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/colleges');
-        if (!response.ok) {
-          throw new Error('Failed to fetch colleges');
-        }
-        const data = await response.json();
-        setColleges(data);
+        const [collegeRes, ecnlRes] = await Promise.all([
+          fetch('/api/colleges'),
+          fetch('/api/ecnl-clubs'),
+        ]);
+        if (!collegeRes.ok) throw new Error('Failed to fetch colleges');
+        if (!ecnlRes.ok) throw new Error('Failed to fetch ECNL clubs');
+        const [collegeData, ecnlData] = await Promise.all([
+          collegeRes.json(),
+          ecnlRes.json(),
+        ]);
+        setColleges(collegeData);
+        setEcnlClubs(ecnlData);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
-        console.error('Error fetching colleges:', err);
+        console.error('Error fetching data:', err);
       } finally {
         setLoading(false);
       }
@@ -85,7 +113,7 @@ export default function Home() {
 
     const results: (College & { distanceMiles?: number })[] = [];
 
-    for (const college of colleges) {
+    for (const college of activeDataset) {
       // Division filter
       if (!filters.divisions.includes(college.division)) continue;
       // Conference filter
@@ -123,22 +151,22 @@ export default function Home() {
     }
 
     return results;
-  }, [colleges, filters]);
+  }, [activeDataset, filters]);
 
   // Get conferences available for current filters
   const availableConferences = useMemo(() => {
-    const filtered = colleges.filter(c => {
+    const filtered = activeDataset.filter(c => {
       if (!filters.divisions.includes(c.division)) return false;
       if (filters.regions.length > 0 && !filters.regions.includes(c.region)) return false;
       if (filters.states.length > 0 && !filters.states.includes(c.state)) return false;
       return true;
     });
     return [...new Set(filtered.map(c => c.conference))].sort();
-  }, [colleges, filters.divisions, filters.regions, filters.states]);
+  }, [activeDataset, filters.divisions, filters.regions, filters.states]);
 
   // Get available states based on selected regions
   const availableStates = useMemo(() => {
-    let filtered = colleges.filter(c => filters.divisions.includes(c.division));
+    let filtered = activeDataset.filter(c => filters.divisions.includes(c.division));
 
     // If regions are selected, only show states in those regions
     if (filters.regions.length > 0) {
@@ -148,7 +176,7 @@ export default function Home() {
     }
 
     return [...new Set(filtered.map(c => c.state))].filter(Boolean).sort();
-  }, [colleges, filters.divisions, filters.regions]);
+  }, [activeDataset, filters.divisions, filters.regions]);
 
   const toggleCheck = useCallback((id: string) => {
     setSelectedCollegeIds(prev => {
@@ -180,8 +208,8 @@ export default function Home() {
   }, []);
 
   const selectedColleges = useMemo(() => {
-    return colleges.filter(c => selectedCollegeIds.has(c.id));
-  }, [colleges, selectedCollegeIds]);
+    return activeDataset.filter(c => selectedCollegeIds.has(c.id));
+  }, [activeDataset, selectedCollegeIds]);
 
   if (loading) {
     return (
@@ -219,9 +247,31 @@ export default function Home() {
             R
           </div>
           <h1 className="text-xl font-semibold">Recruit360</h1>
+          <div className="flex items-center gap-1 ml-4 bg-slate-700 rounded-lg p-1">
+            <button
+              onClick={() => switchMode('collegiate')}
+              className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                mode === 'collegiate'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-slate-300 hover:text-white'
+              }`}
+            >
+              Collegiate
+            </button>
+            <button
+              onClick={() => switchMode('ecnl')}
+              className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                mode === 'ecnl'
+                  ? 'bg-emerald-600 text-white'
+                  : 'text-slate-300 hover:text-white'
+              }`}
+            >
+              ECNL
+            </button>
+          </div>
         </div>
         <nav className="text-sm text-slate-300">
-          College Soccer Database
+          {mode === 'ecnl' ? 'ECNL Club Database' : 'College Soccer Database'}
         </nav>
       </header>
 
@@ -231,6 +281,7 @@ export default function Home() {
         conferences={availableConferences}
         availableStates={availableStates}
         onFiltersChange={setFilters}
+        mode={mode}
       />
 
       {/* Main content */}
@@ -272,6 +323,7 @@ export default function Home() {
         <EmailModal
           colleges={selectedColleges}
           onClose={() => setShowEmailModal(false)}
+          mode={mode}
         />
       )}
     </div>

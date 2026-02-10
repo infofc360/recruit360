@@ -1,12 +1,13 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { College, CoachRole } from '@/types/college';
+import { College, CoachRole, AppMode } from '@/types/college';
 import { classifyCoachRole, filterCoachesByRoles, buildMailtoLinks } from '@/lib/coachUtils';
 
 interface EmailModalProps {
   colleges: College[];
   onClose: () => void;
+  mode: AppMode;
 }
 
 const ROLE_LABELS: Record<CoachRole, string> = {
@@ -15,7 +16,7 @@ const ROLE_LABELS: Record<CoachRole, string> = {
   associate: 'Associate Head Coaches',
 };
 
-export default function EmailModal({ colleges, onClose }: EmailModalProps) {
+export default function EmailModal({ colleges, onClose, mode }: EmailModalProps) {
   const [selectedRoles, setSelectedRoles] = useState<CoachRole[]>(['head', 'assistant', 'associate']);
   const [subject, setSubject] = useState('Recruiting Inquiry');
   const [copied, setCopied] = useState(false);
@@ -29,13 +30,20 @@ export default function EmailModal({ colleges, onClose }: EmailModalProps) {
   const filteredEmails = useMemo(() => {
     const emails: string[] = [];
     for (const college of colleges) {
-      const coaches = filterCoachesByRoles(college.coaches, selectedRoles);
-      for (const coach of coaches) {
-        if (coach.email) emails.push(coach.email);
+      if (mode === 'ecnl') {
+        // ECNL: include all emails directly
+        for (const coach of college.coaches) {
+          if (coach.email) emails.push(coach.email);
+        }
+      } else {
+        const coaches = filterCoachesByRoles(college.coaches, selectedRoles);
+        for (const coach of coaches) {
+          if (coach.email) emails.push(coach.email);
+        }
       }
     }
     return [...new Set(emails)];
-  }, [colleges, selectedRoles]);
+  }, [colleges, selectedRoles, mode]);
 
   const roleCounts = useMemo(() => {
     const counts: Record<CoachRole, number> = { head: 0, assistant: 0, associate: 0 };
@@ -70,7 +78,7 @@ export default function EmailModal({ colleges, onClose }: EmailModalProps) {
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-lg font-semibold text-gray-900">
-              Email Coaches
+              {mode === 'ecnl' ? 'Email Clubs' : 'Email Coaches'}
             </h2>
             <button
               onClick={onClose}
@@ -82,33 +90,35 @@ export default function EmailModal({ colleges, onClose }: EmailModalProps) {
             </button>
           </div>
 
-          {/* School count */}
+          {/* School/club count */}
           <p className="text-sm text-gray-500 mb-4">
-            {colleges.length} school{colleges.length !== 1 ? 's' : ''} selected
+            {colleges.length} {mode === 'ecnl' ? 'club' : 'school'}{colleges.length !== 1 ? 's' : ''} selected
           </p>
 
-          {/* Coach role filters */}
-          <div className="mb-4">
-            <label className="text-sm font-medium text-gray-700 mb-2 block">
-              Include coaches:
-            </label>
-            <div className="space-y-2">
-              {(Object.keys(ROLE_LABELS) as CoachRole[]).map(role => (
-                <label key={role} className="flex items-center gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={selectedRoles.includes(role)}
-                    onChange={() => toggleRole(role)}
-                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                  />
-                  <span className="text-sm text-gray-700">
-                    {ROLE_LABELS[role]}
-                    <span className="text-gray-400 ml-1">({roleCounts[role]})</span>
-                  </span>
-                </label>
-              ))}
+          {/* Coach role filters — hidden in ECNL mode */}
+          {mode !== 'ecnl' && (
+            <div className="mb-4">
+              <label className="text-sm font-medium text-gray-700 mb-2 block">
+                Include coaches:
+              </label>
+              <div className="space-y-2">
+                {(Object.keys(ROLE_LABELS) as CoachRole[]).map(role => (
+                  <label key={role} className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={selectedRoles.includes(role)}
+                      onChange={() => toggleRole(role)}
+                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-sm text-gray-700">
+                      {ROLE_LABELS[role]}
+                      <span className="text-gray-400 ml-1">({roleCounts[role]})</span>
+                    </span>
+                  </label>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Subject line */}
           <div className="mb-4">
@@ -163,7 +173,9 @@ export default function EmailModal({ colleges, onClose }: EmailModalProps) {
 
           {filteredEmails.length === 0 && (
             <p className="mt-4 text-sm text-amber-600">
-              No coaches match the selected roles. Try selecting different coach types.
+              {mode === 'ecnl'
+                ? 'No contact emails available for the selected clubs.'
+                : 'No coaches match the selected roles. Try selecting different coach types.'}
             </p>
           )}
         </div>

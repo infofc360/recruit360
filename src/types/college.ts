@@ -5,10 +5,14 @@ export interface Coach {
   phone?: string;
 }
 
+export type Division = "D1" | "D2" | "D3" | "ECNL";
+
+export type AppMode = 'collegiate' | 'ecnl';
+
 export interface College {
   id: string;
   name: string;
-  division: "D1" | "D2" | "D3";
+  division: Division;
   conference: string;
   city: string;
   state: string;
@@ -36,7 +40,7 @@ export interface LocationSearch {
 export type CoachRole = 'head' | 'assistant' | 'associate';
 
 export interface CollegeFilters {
-  divisions: ("D1" | "D2" | "D3")[];
+  divisions: Division[];
   conferences: string[];
   regions: Region[];
   states: string[];

@@ -1,0 +1,2360 @@
+[
+  {
+    "id": "ac-connecticut",
+    "name": "AC Connecticut",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "CT",
+    "region": "Northeast",
+    "lat": 41.5573837,
+    "lng": -72.1169431,
+    "coaches": [],
+    "website": "https://www.acconnecticut.com/contactus"
+  },
+  {
+    "id": "alabama-fc",
+    "name": "Alabama FC",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "AL",
+    "region": "Southeast",
+    "lat": 33.9260807,
+    "lng": -86.0155582,
+    "coaches": [],
+    "website": "https://www.birminghamunited.com/about-alabama-fc/"
+  },
+  {
+    "id": "albion-hurricanes",
+    "name": "Albion Hurricanes",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "",
+    "region": "Southwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "sgreen@albionhurricanes.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jhinfo@albionhurricanes.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "tournaments@albionhurricanes.org"
+      }
+    ],
+    "website": "https://www.albionhurricanes.org/"
+  },
+  {
+    "id": "arizona-arsenal",
+    "name": "Arizona Arsenal",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "arsenaltryouts@gmail.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "davidbelfort@ymail.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "tannafinnvik@azarsenalsc.org"
+      }
+    ],
+    "website": "https://www.azarsenalsc.org/contact/"
+  },
+  {
+    "id": "arsenal-fc",
+    "name": "Arsenal FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 33.8979123,
+    "lng": -117.5731446,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "partnerships@arsenal.co.uk"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "customerservice@arsenaldirect.co.uk"
+      }
+    ],
+    "website": "https://www.arsenal.com/the-club/contact-arsenal"
+  },
+  {
+    "id": "atlanta-fire",
+    "name": "Atlanta Fire",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "GA",
+    "region": "Southeast",
+    "lat": 33.7103888,
+    "lng": -84.3813458,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "kim.hall@atlantaunitedsoccer.com"
+      }
+    ],
+    "website": "https://www.atlantaunitedsoccer.com/"
+  },
+  {
+    "id": "beach-fc",
+    "name": "Beach FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 36.8465642,
+    "lng": -121.8046101,
+    "coaches": [],
+    "website": "https://www.beachfc.com/"
+  },
+  {
+    "id": "bethesda-sc",
+    "name": "Bethesda SC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "SC",
+    "region": "Northeast",
+    "lat": 34.6412668,
+    "lng": -80.0475656,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "office@bethesdasoccer.org"
+      }
+    ],
+    "website": "https://www.bethesdasoccer.org/"
+  },
+  {
+    "id": "boise-thorns",
+    "name": "Boise Thorns",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "ID",
+    "region": "West",
+    "lat": 43.548498,
+    "lng": -116.3431306,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "registrar@boisetimbersthorns.org"
+      }
+    ],
+    "website": "https://boisetimbersthorns.org/contact-us/"
+  },
+  {
+    "id": "boise-timbers",
+    "name": "Boise Timbers",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "ID",
+    "region": "West",
+    "lat": 43.5726978,
+    "lng": -116.1359797,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "registrar@boisetimbersthorns.org"
+      }
+    ],
+    "website": "https://boisetimbersthorns.org/contact-us/"
+  },
+  {
+    "id": "capital-fc",
+    "name": "Capital FC",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "office@cfcsalem.com"
+      }
+    ],
+    "website": "https://www.cfcsalem.com/"
+  },
+  {
+    "id": "cesa",
+    "name": "CESA",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@carolinaelitesc.com"
+      }
+    ],
+    "website": "http://carolinaelitesc.com/"
+  },
+  {
+    "id": "charlotte-independence",
+    "name": "Charlotte Independence",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "NC",
+    "region": "Southeast",
+    "lat": 35.1372226,
+    "lng": -80.7170502,
+    "coaches": [],
+    "website": "https://www.independencesoccer.club/"
+  },
+  {
+    "id": "charlotte-sa",
+    "name": "Charlotte SA",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "WA",
+    "region": "Southeast",
+    "lat": 38.8881013,
+    "lng": -76.9951879,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@charlottesocceracademy.com"
+      }
+    ],
+    "website": "https://charlottesocceracademy.com/"
+  },
+  {
+    "id": "cleveland-force",
+    "name": "Cleveland Force",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "OH",
+    "region": "Midwest",
+    "lat": 41.4414656,
+    "lng": -81.6277015,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Info@ClevelandForceSC.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "reilee@force-sports.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "CJ@Force-Sports.com"
+      }
+    ],
+    "website": "https://www.clevelandforcesc.com/"
+  },
+  {
+    "id": "colorado-rush",
+    "name": "Colorado Rush",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "CO",
+    "region": "West",
+    "lat": 38.8399934,
+    "lng": -104.0921799,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@coloradorush.com"
+      }
+    ],
+    "website": "https://www.coloradorush.com/contact-us"
+  },
+  {
+    "id": "concorde-fire",
+    "name": "Concorde Fire",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "OK",
+    "region": "Southeast",
+    "lat": 35.6403417,
+    "lng": -97.4836314,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@concordefire.com"
+      }
+    ],
+    "website": "https://concordefire.com/contact-us"
+  },
+  {
+    "id": "crossfire-premier",
+    "name": "Crossfire Premier",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.crossfiresoccer.org/about-us/contact/"
+  },
+  {
+    "id": "crossfire-united",
+    "name": "Crossfire United",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.crossfiresoccer.org/"
+  },
+  {
+    "id": "d-feeters-kicks-sc",
+    "name": "D’Feeters Kicks SC",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "",
+    "region": "Southwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://playclubsoccer.org/club/dksc"
+  },
+  {
+    "id": "dallas-texans",
+    "name": "Dallas Texans",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "TX",
+    "region": "Southwest",
+    "lat": 32.9212104,
+    "lng": -96.9233597,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "hassan1@prodigy.net"
+      }
+    ],
+    "website": "https://dallastexans.com/resources/contact-us/"
+  },
+  {
+    "id": "davis-legacy",
+    "name": "Davis Legacy",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "UT",
+    "region": "West",
+    "lat": 41.0631733,
+    "lng": -111.9436431,
+    "coaches": [],
+    "website": "https://playclubsoccer.org/club/davis-legacy"
+  },
+  {
+    "id": "de-anza-force",
+    "name": "De Anza Force",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.deanzaforce.org/about-us/contact-force"
+  },
+  {
+    "id": "del-mar-sharks",
+    "name": "Del Mar Sharks",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://legendsfcsd.com/"
+  },
+  {
+    "id": "delaware-fc",
+    "name": "Delaware FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "defc@delawarefc.org"
+      }
+    ],
+    "website": "https://delawarefc.org/"
+  },
+  {
+    "id": "eagles-sc",
+    "name": "Eagles SC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 33.2880928,
+    "lng": -116.5941849,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@eaglessc.com"
+      }
+    ],
+    "website": "https://eaglessc.sprocketsports.com/"
+  },
+  {
+    "id": "east-coast-fc",
+    "name": "East Coast FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://playclubsoccer.org/club/east-coast-fc"
+  },
+  {
+    "id": "eastside-fc",
+    "name": "Eastside FC",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@eastsidefc.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "media@eastsidefc.org"
+      }
+    ],
+    "website": "https://www.eastsidefc.org/contact"
+  },
+  {
+    "id": "eclipse-select",
+    "name": "Eclipse Select",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.eclipseselect.org/"
+  },
+  {
+    "id": "eugene-metro",
+    "name": "Eugene Metro",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://emfc.org/"
+  },
+  {
+    "id": "fc-bucks",
+    "name": "FC Bucks",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "MI",
+    "region": "Northeast",
+    "lat": 44.7480703,
+    "lng": -84.5700241,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@crusa.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "connect@crusa.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "crusapresident@crusa.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "supervisor@crusa.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "girlsdoc@crusa.net"
+      }
+    ],
+    "website": "https://www.fcbucks.com/contact-us-2/"
+  },
+  {
+    "id": "fc-dallas",
+    "name": "FC Dallas",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "TX",
+    "region": "Southwest",
+    "lat": 32.7762719,
+    "lng": -96.7968559,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "feedback@fcdallas.com"
+      }
+    ],
+    "website": "https://www.fcdallas.com/"
+  },
+  {
+    "id": "fc-delco",
+    "name": "FC Delco",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "NC",
+    "region": "Northeast",
+    "lat": 34.3157241,
+    "lng": -78.2247211,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jeff@fcdelco.org"
+      }
+    ],
+    "website": "https://fcdelco.org/administration/contact-us/"
+  },
+  {
+    "id": "fc-portland",
+    "name": "FC Portland",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "louis.tanguy@fcportland.org"
+      }
+    ],
+    "website": "https://www.fcportland.org/contact"
+  },
+  {
+    "id": "fc-pride",
+    "name": "FC Pride",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://fcpride.org/"
+  },
+  {
+    "id": "fc-stars",
+    "name": "FC Stars",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@fcstars.com"
+      }
+    ],
+    "website": "https://fcstars.com/about-us/contact-us/"
+  },
+  {
+    "id": "florida-elite",
+    "name": "Florida Elite",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "FL",
+    "region": "Southeast",
+    "lat": 29.1290911,
+    "lng": -81.0010027,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@FloridaEliteSA.com"
+      }
+    ],
+    "website": "https://sports.bluesombrero.com/Default.aspx?tabid=754747"
+  },
+  {
+    "id": "florida-kraze-krush",
+    "name": "Florida Kraze Krush",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "koettl@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "dgorrick@floridarazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "dpetersen@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "mhansen@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "idcamp@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "gbarbosa@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "adensberger@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "ovallejo@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "hmenzies@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "lmarcus@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "dphillips@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "javallone@floridakrazekrush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "gmikalsen@floridakrazekrush.com"
+      }
+    ],
+    "website": "https://floridakrazekrush.com/contact-fkk/"
+  },
+  {
+    "id": "fsa-fc",
+    "name": "FSA FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "clubadmin@fsafcunited.com"
+      }
+    ],
+    "website": "https://fsafc.com/contact-us/"
+  },
+  {
+    "id": "gretna-elite-academy",
+    "name": "Gretna Elite Academy",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "chris.dunford@gretnaeliteacademy.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "raphael.martinez@gretnaeliteacademy.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "clubadmin@gretnaeliteacademy.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "greg.jarosik@gretnaeliteacademy.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "mitch.kavanagh@gretnaeliteacademy.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jono.callaghan@gretnaeliteacademy.com"
+      }
+    ],
+    "website": "https://www.gretnaeliteacademy.com/contact/"
+  },
+  {
+    "id": "gsa",
+    "name": "GSA",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.gsasoccer.com/"
+  },
+  {
+    "id": "heat-fc",
+    "name": "Heat FC",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@fresnoheatfc.com"
+      }
+    ],
+    "website": "https://www.fresnoheatfc.com/"
+  },
+  {
+    "id": "idaho-rush",
+    "name": "Idaho Rush",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "ID",
+    "region": "West",
+    "lat": 45.0974012,
+    "lng": -114.9344641,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@hawaiirush.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@idahorush.com"
+      }
+    ],
+    "website": "https://www.idahorush.com/contact"
+  },
+  {
+    "id": "indiana-fire",
+    "name": "Indiana Fire",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "IN",
+    "region": "Midwest",
+    "lat": 39.7690881,
+    "lng": -86.1638704,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "fcs11info@gmail.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@indianafirejuniorssouth.com"
+      }
+    ],
+    "website": "https://www.indyelevenspirit.org/Default.aspx?tabid=160784"
+  },
+  {
+    "id": "internationals-sc",
+    "name": "Internationals SC",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "ksarver@gmail.com"
+      }
+    ],
+    "website": "https://www.internationalssoccer.com/"
+  },
+  {
+    "id": "jacksonville-fc",
+    "name": "Jacksonville FC",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "FL",
+    "region": "Southeast",
+    "lat": 30.4703156,
+    "lng": -81.5639875,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "office@jfcsoccer.com"
+      }
+    ],
+    "website": "https://jfcsoccer.com/contact"
+  },
+  {
+    "id": "kansas-city-athletics",
+    "name": "Kansas City Athletics",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "KS",
+    "region": "Midwest",
+    "lat": 39.1003365,
+    "lng": -94.5853024,
+    "coaches": [],
+    "website": "https://www.athleticskc.com/"
+  },
+  {
+    "id": "kansas-rush",
+    "name": "Kansas Rush",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "KS",
+    "region": "Midwest",
+    "lat": 38.5047752,
+    "lng": -99.309214,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "officestaff@kansasrush.com"
+      }
+    ],
+    "website": "https://www.kansasrush.com/"
+  },
+  {
+    "id": "kings-hammer",
+    "name": "Kings Hammer",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@kingshammer.com"
+      }
+    ],
+    "website": "https://kingshammer.com/contact/"
+  },
+  {
+    "id": "la-breakers",
+    "name": "LA Breakers",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 33.5819617,
+    "lng": -117.7374532,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@labreakersfc.com"
+      }
+    ],
+    "website": "https://labreakersfc.com/"
+  },
+  {
+    "id": "la-roca",
+    "name": "La Roca",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://larocafc.com/contact/"
+  },
+  {
+    "id": "lafc-slammers",
+    "name": "LAFC Slammers",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://slammersfc.org/contact/"
+  },
+  {
+    "id": "legends-fc",
+    "name": "Legends FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 34.3243072,
+    "lng": -118.4942347,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "mama.hodges@legendsfc.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "tsklar@legendsfc.net"
+      }
+    ],
+    "website": "https://www.legendsfc.net/contact-us"
+  },
+  {
+    "id": "louisiana-fire",
+    "name": "Louisiana Fire",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "LA",
+    "region": "Southeast",
+    "lat": 30.3687638,
+    "lng": -91.1603972,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@lafiresoccer.com"
+      }
+    ],
+    "website": "https://www.lafiresoccer.com/"
+  },
+  {
+    "id": "marin-fc",
+    "name": "Marin FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 33.6575745,
+    "lng": -117.6838098,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@marinfc.com"
+      }
+    ],
+    "website": "https://marinfc.org/contact-us/"
+  },
+  {
+    "id": "maryland-united-fc",
+    "name": "Maryland United FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "MD",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "steve.campbell@mdunitedfc.org"
+      }
+    ],
+    "website": "https://mdunitedfc.org/contact/"
+  },
+  {
+    "id": "match-fit-academy",
+    "name": "Match Fit Academy",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@matchfitacademy.net"
+      }
+    ],
+    "website": "https://tshq.bluesombrero.com/Default.aspx?tabid=1753820"
+  },
+  {
+    "id": "michigan-hawks",
+    "name": "Michigan Hawks",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "MI",
+    "region": "Midwest",
+    "lat": 45.3019566,
+    "lng": -83.8874982,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "michele@hawks.soccer"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "doug@hawks.soccer"
+      }
+    ],
+    "website": "https://hawks.soccer/contact/"
+  },
+  {
+    "id": "midwest-united",
+    "name": "Midwest United",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "MI",
+    "region": "Midwest",
+    "lat": 42.8972788,
+    "lng": -85.5815032,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@midwestunitedfc.com"
+      }
+    ],
+    "website": "https://midwestunitedfc.com/"
+  },
+  {
+    "id": "minnesota-thunder-academy",
+    "name": "Minnesota Thunder Academy",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "MN",
+    "region": "Midwest",
+    "lat": 44.8606526,
+    "lng": -93.4005721,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@mnthunderacademy.org"
+      }
+    ],
+    "website": "https://mnthunderacademy.org/contact-us/"
+  },
+  {
+    "id": "missouri-rush",
+    "name": "Missouri Rush",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "MO",
+    "region": "Midwest",
+    "lat": 38.7447238,
+    "lng": -90.7538195,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@morushsoccer.com"
+      }
+    ],
+    "website": "https://www.morushsoccer.com/contact-us"
+  },
+  {
+    "id": "mustang-sc",
+    "name": "Mustang SC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 34.3248935,
+    "lng": -118.468182,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "media@mustangsoccer.com"
+      }
+    ],
+    "website": "https://mustangsoccer.com/contact-us"
+  },
+  {
+    "id": "mvla",
+    "name": "MVLA",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@mvlasc.org"
+      }
+    ],
+    "website": "https://www.mvlasc.org/"
+  },
+  {
+    "id": "nationals-sc",
+    "name": "Nationals SC",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@nationalssoccer.com"
+      }
+    ],
+    "website": "https://www.nationalssoccer.com/"
+  },
+  {
+    "id": "nc-courage",
+    "name": "NC Courage",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "NC",
+    "region": "Southeast",
+    "lat": 35.8955774,
+    "lng": -78.5844347,
+    "coaches": [],
+    "website": "https://www.nccourage.com/contact-us"
+  },
+  {
+    "id": "nc-fusion",
+    "name": "NC Fusion",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "NC",
+    "region": "Southeast",
+    "lat": 35.0536817,
+    "lng": -78.8810819,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@ncfusion.org"
+      }
+    ],
+    "website": "https://www.ncfusion.org/"
+  },
+  {
+    "id": "ncfc-youth",
+    "name": "NCFC Youth",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "NC",
+    "region": "Southeast",
+    "lat": 35.8844007,
+    "lng": -78.5492123,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@NCFCYouth.com"
+      }
+    ],
+    "website": "https://www.ncfcyouth.com/"
+  },
+  {
+    "id": "ohio-elite",
+    "name": "Ohio Elite",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "OH",
+    "region": "Midwest",
+    "lat": 41.5051659,
+    "lng": -81.6332744,
+    "coaches": [],
+    "website": "https://ohioelite.sportngin.com/page/show/3065124-contact-us"
+  },
+  {
+    "id": "ohio-premier",
+    "name": "Ohio Premier",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "OH",
+    "region": "Midwest",
+    "lat": 41.0332448,
+    "lng": -81.9006796,
+    "coaches": [],
+    "website": "https://opsoccer.com/"
+  },
+  {
+    "id": "oklahoma-celtic",
+    "name": "Oklahoma Celtic",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "OK",
+    "region": "Southwest",
+    "lat": 35.4720602,
+    "lng": -97.7593652,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "administrator@oklahomaceltic.com"
+      }
+    ],
+    "website": "https://oklahomaceltic.com/about-us/contact-us/"
+  },
+  {
+    "id": "oklahoma-energy-fc",
+    "name": "Oklahoma Energy FC",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "OK",
+    "region": "Southwest",
+    "lat": 36.1906497,
+    "lng": -95.2907489,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@okenergyfc.org"
+      }
+    ],
+    "website": "https://okenergyfc.org/"
+  },
+  {
+    "id": "oregon-premier",
+    "name": "Oregon Premier",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "OR",
+    "region": "West",
+    "lat": 45.5881655,
+    "lng": -122.6760597,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@oregonpremierfc.com"
+      }
+    ],
+    "website": "https://www.oregonpremierfc.com/contact-us"
+  },
+  {
+    "id": "orlando-city-youth-soccer",
+    "name": "Orlando City Youth Soccer",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Admin@ocyouthsoccer.com"
+      }
+    ],
+    "website": "https://www.oss-seminole.com/contact-us"
+  },
+  {
+    "id": "pacnw",
+    "name": "PacNW",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.pacificnorthwestsoccerclub.org/contact"
+  },
+  {
+    "id": "pda",
+    "name": "PDA",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 45.5084048,
+    "lng": -73.5665434,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "rkstaley@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "rjpicone@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "csc_sas@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "bsoli@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "vvettese@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jdstephens@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "tvoglesong@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jbowman@alacritysolutions.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "aborninkhof@alacritysolutions.com"
+      }
+    ],
+    "website": "https://pdacorporation.com/ContactUs"
+  },
+  {
+    "id": "penn-fusion-sa",
+    "name": "Penn Fusion SA",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jscott@pennfusion.org"
+      }
+    ],
+    "website": "https://www.pennfusion.org/"
+  },
+  {
+    "id": "philadelphia-ukrainians",
+    "name": "Philadelphia Ukrainians",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@ukrainiannationals.com"
+      }
+    ],
+    "website": "https://ukrainiannationals.sprocketsports.com/"
+  },
+  {
+    "id": "phoenix-rising-fc",
+    "name": "Phoenix Rising FC",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "AZ",
+    "region": "West",
+    "lat": 33.5593664,
+    "lng": -111.8864574,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@phxrisingfc.com"
+      }
+    ],
+    "website": "https://www.phxrisingfc.com/contact-us/"
+  },
+  {
+    "id": "pipeline-sc",
+    "name": "Pipeline SC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "SC",
+    "region": "Northeast",
+    "lat": 34.8467103,
+    "lng": -82.0107508,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "santino@pipelinesc.com"
+      }
+    ],
+    "website": "https://scpipelineandengineering.com/contact/"
+  },
+  {
+    "id": "pittsburgh-riverhounds",
+    "name": "Pittsburgh Riverhounds",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.riverhounds.com/contact-us/"
+  },
+  {
+    "id": "pleasanton-rage",
+    "name": "Pleasanton Rage",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://pleasantonrage.org/contact-us/"
+  },
+  {
+    "id": "portland-thorns-academy",
+    "name": "Portland Thorns Academy",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "portlandthornsacademy@gmail.com"
+      }
+    ],
+    "website": "https://www.thorns.com/academy/player-interest-form"
+  },
+  {
+    "id": "psa-monmouth",
+    "name": "PSA Monmouth",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://princetonsocceracademy.com/monmouth/"
+  },
+  {
+    "id": "racing-louisville-academy",
+    "name": "Racing Louisville Academy",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.loucityracingacademy.com/"
+  },
+  {
+    "id": "real-colorado",
+    "name": "Real Colorado",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "CO",
+    "region": "West",
+    "lat": 39.541871,
+    "lng": -104.8460555,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "realcares@realcolorado.net"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "SobyG@realcolorado.net"
+      }
+    ],
+    "website": "https://www.realcolorado.net/"
+  },
+  {
+    "id": "real-so-cal",
+    "name": "Real So Cal",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Paul.clifton@lafcsocal.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Richard.Simms@lafcsocal.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Alberto.Bru@lafcsocal.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@lafcsocal.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Zach.Feldman@lafcsocal.org"
+      }
+    ],
+    "website": "http://realsocal.org/about-us/contact-us"
+  },
+  {
+    "id": "rebels-sc",
+    "name": "Rebels SC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "SC",
+    "region": "West",
+    "lat": 32.8407484,
+    "lng": -79.8340514,
+    "coaches": [],
+    "website": "https://rebelssoccerclub.com/home/"
+  },
+  {
+    "id": "richmond-united",
+    "name": "Richmond United",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "communications@richmondunited.com"
+      }
+    ],
+    "website": "https://richmondunited.com/"
+  },
+  {
+    "id": "san-diego-surf",
+    "name": "San Diego Surf",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 32.7087422,
+    "lng": -117.1704417,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@surfsoccer.com"
+      }
+    ],
+    "website": "https://surfsoccer.com/contact-us/"
+  },
+  {
+    "id": "san-juan-sc",
+    "name": "San Juan SC",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "clubadmin@sanjuansoccer.org"
+      }
+    ],
+    "website": "https://playclubsoccer.org/club/san-juan-soccer-club"
+  },
+  {
+    "id": "santa-rosa-united",
+    "name": "Santa Rosa United",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "CA",
+    "region": "West",
+    "lat": 38.4589573,
+    "lng": -122.7136164,
+    "coaches": [],
+    "website": "https://www.srunited.com/club/contact-us/"
+  },
+  {
+    "id": "scorpions-soccer",
+    "name": "Scorpions Soccer",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@scorpionssoccer.org"
+      }
+    ],
+    "website": "https://www.scorpionssoccer.org/"
+  },
+  {
+    "id": "seattle-united",
+    "name": "Seattle United",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "WA",
+    "region": "West",
+    "lat": 47.5687743,
+    "lng": -122.3836821,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@seattleunited.com"
+      }
+    ],
+    "website": "https://www.seattleunited.com/"
+  },
+  {
+    "id": "sjeb-fc",
+    "name": "SJEB FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "bill@sjebfc.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "SJEBFOOTBALL@GMAIL.COM"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jeff@sjebfc.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "wayne@sjebfc.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "wbshute@njrush.com"
+      }
+    ],
+    "website": "https://www.sjebfc.com/"
+  },
+  {
+    "id": "slammers-fc",
+    "name": "Slammers FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://slammersfc.org/contact/"
+  },
+  {
+    "id": "slsg",
+    "name": "SLSG",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "IL",
+    "region": "Midwest",
+    "lat": 38.6955607,
+    "lng": -90.0144525,
+    "coaches": [],
+    "website": "https://www.slsgsoccer.com/"
+  },
+  {
+    "id": "so-cal-blues",
+    "name": "So Cal Blues",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://bluessoccer.com/about"
+  },
+  {
+    "id": "solar-sc",
+    "name": "Solar SC",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "",
+    "region": "Southwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@solarsoccerclub.net"
+      }
+    ],
+    "website": "https://solarsoccerclub.net/resource-hub/contact-us/"
+  },
+  {
+    "id": "sporting-blue-valley",
+    "name": "Sporting Blue Valley",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "",
+    "region": "Midwest",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://clubs.bluesombrero.com/Default.aspx?tabid=48597"
+  },
+  {
+    "id": "st-louis-stars",
+    "name": "St. Louis Stars",
+    "division": "ECNL",
+    "conference": "Midwest",
+    "city": "",
+    "state": "MO",
+    "region": "Midwest",
+    "lat": 38.6317586,
+    "lng": -90.2254759,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Hasan@stlstars.club"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Andrew@stlstars.club"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Hutch@stlstars.club"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "ryanwerk@gmail.com"
+      }
+    ],
+    "website": "https://stlstars.club/contact-us/"
+  },
+  {
+    "id": "sting-sc",
+    "name": "Sting SC",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "SC",
+    "region": "Southwest",
+    "lat": 32.9986606,
+    "lng": -79.7549391,
+    "coaches": [],
+    "website": "https://stingsoccer.com/"
+  },
+  {
+    "id": "strikers-fc",
+    "name": "Strikers FC",
+    "division": "ECNL",
+    "conference": "California (South & North)",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.strikersfc.com/"
+  },
+  {
+    "id": "sunrise-prime",
+    "name": "Sunrise Prime",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Aingham@fc-prime.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Cyibirin@fc-prime.cm"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Lbrown@fc-prime.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "Jhenao@fc-prime.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@fc-prime.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "acamacho@fc-prime.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "jburaty@fc-prime.com"
+      }
+    ],
+    "website": "https://www.fc-prime.com/regions-broward"
+  },
+  {
+    "id": "susa-fc",
+    "name": "SUSA FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "LTRAYPHOTOGRAPHY@GMAIL.COM"
+      }
+    ],
+    "website": "https://www.susaacademy.com/"
+  },
+  {
+    "id": "tampa-bay-united",
+    "name": "Tampa Bay United",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "FL",
+    "region": "Southeast",
+    "lat": 27.9877508,
+    "lng": -82.5742505,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@tbusc.com"
+      }
+    ],
+    "website": "https://tbusc.com/contact/"
+  },
+  {
+    "id": "tennessee-soccer-club",
+    "name": "Tennessee Soccer Club",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "TN",
+    "region": "Southeast",
+    "lat": 35.7376237,
+    "lng": -83.952697,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@tennesseesoccerclub.org"
+      }
+    ],
+    "website": "https://tennesseesoccerclub.org/locations/"
+  },
+  {
+    "id": "tulsa-sc",
+    "name": "Tulsa SC",
+    "division": "ECNL",
+    "conference": "Texas & South Central",
+    "city": "",
+    "state": "OK",
+    "region": "Southwest",
+    "lat": 36.1563122,
+    "lng": -95.9927516,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "support@tulsasc.com"
+      }
+    ],
+    "website": "https://www.tulsasc.com/contact-us/"
+  },
+  {
+    "id": "ufa",
+    "name": "UFA",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "mountains@unitedfa.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "loganville@unitedfa.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "southgeorgia@unitedfa.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "forsyth@unitedfa.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "norcross@unitedfa.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "lawrenceville@unitedfa.org"
+      }
+    ],
+    "website": "https://www.unitedfa.org/"
+  },
+  {
+    "id": "utah-avalanche",
+    "name": "Utah Avalanche",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "UT",
+    "region": "West",
+    "lat": 39.6278219,
+    "lng": -110.7922019,
+    "coaches": [],
+    "website": "https://utahavalanche.com/about-us/contact-us/"
+  },
+  {
+    "id": "utah-royals-fc-az",
+    "name": "Utah Royals FC-AZ",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "troberts@royalsfcaz.com"
+      }
+    ],
+    "website": "https://www.royalsfcaz.com/"
+  },
+  {
+    "id": "vda",
+    "name": "VDA",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "admin@vdasoccer.org"
+      }
+    ],
+    "website": "https://www.vdasoccer.org/"
+  },
+  {
+    "id": "washington-premier",
+    "name": "Washington Premier",
+    "division": "ECNL",
+    "conference": "West & Northwest",
+    "city": "",
+    "state": "WA",
+    "region": "West",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.washingtonpremierfc.com/about-us/contact-us/"
+  },
+  {
+    "id": "western-new-york-flash",
+    "name": "Western New York Flash",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "",
+    "region": "Northeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "rjackman@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "karaujo@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "rcurtis@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "pwhitcomb@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "bwolanski@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "bsteele@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "edade@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "alines@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "bpedezert@wnyflashsoccer.com"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "communications@wnyflashsoccer.com"
+      }
+    ],
+    "website": "https://wnyflash.com/academy-overview/contact"
+  },
+  {
+    "id": "wilmington-hammerheads",
+    "name": "Wilmington Hammerheads",
+    "division": "ECNL",
+    "conference": "Southeast",
+    "city": "",
+    "state": "",
+    "region": "Southeast",
+    "lat": 0,
+    "lng": 0,
+    "coaches": [],
+    "website": "https://www.hammerheads.soccer/contact"
+  },
+  {
+    "id": "world-class-fc",
+    "name": "World Class FC",
+    "division": "ECNL",
+    "conference": "Northeast & Mid-Atlantic",
+    "city": "",
+    "state": "OH",
+    "region": "Northeast",
+    "lat": 40.4527032,
+    "lng": -83.9014572,
+    "coaches": [
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "info@wcsocceracademy.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "uniforms@wcsocceracademy.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "registrar@wcsocceracademy.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "boysdoc@wcsocceracademy.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "girlsdoc@wcsocceracademy.org"
+      },
+      {
+        "name": "Contact",
+        "title": "Club Contact",
+        "email": "wcfcjj@gmail.com"
+      }
+    ],
+    "website": "http://wcsocceracademy.org/contact-information/world-class-fc-contact-information/"
+  }
+]

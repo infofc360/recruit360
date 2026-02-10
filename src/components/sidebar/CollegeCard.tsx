@@ -58,7 +58,9 @@ export default function CollegeCard({
               {college.name}
             </h3>
             <p className="text-gray-500 text-xs mt-0.5">
-              {college.city}, {college.state}
+              {college.division === 'ECNL'
+                ? college.conference
+                : `${college.city}, ${college.state}`}
               {distanceMiles != null && (
                 <span className="text-amber-600 font-medium"> ({distanceMiles} mi)</span>
               )}
@@ -99,7 +101,9 @@ export default function CollegeCard({
             setIsExpanded(!isExpanded);
           }}
         >
-          <span className="font-medium">Coaching Staff</span>
+          <span className="font-medium">
+            {college.division === 'ECNL' ? 'Club Contacts' : 'Coaching Staff'}
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`h-4 w-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
@@ -113,19 +117,38 @@ export default function CollegeCard({
 
         {isExpanded && (
           <div className="px-4 pb-4 space-y-3">
-            {college.coaches.map((coach, idx) => (
-              <div key={idx} className="text-sm">
-                <p className="font-medium text-gray-800">{coach.name}</p>
-                <p className="text-gray-500 text-xs">{coach.title}</p>
-                <a
-                  href={`mailto:${coach.email}`}
-                  className="text-blue-600 text-xs hover:underline"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {coach.email}
-                </a>
-              </div>
-            ))}
+            {college.division === 'ECNL' ? (
+              // ECNL: show emails directly
+              college.coaches.length > 0 ? (
+                college.coaches.map((coach, idx) => (
+                  <a
+                    key={idx}
+                    href={`mailto:${coach.email}`}
+                    className="block text-blue-600 text-xs hover:underline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {coach.email}
+                  </a>
+                ))
+              ) : (
+                <p className="text-gray-400 text-xs">No contact emails available</p>
+              )
+            ) : (
+              // Collegiate: show full coach info
+              college.coaches.map((coach, idx) => (
+                <div key={idx} className="text-sm">
+                  <p className="font-medium text-gray-800">{coach.name}</p>
+                  <p className="text-gray-500 text-xs">{coach.title}</p>
+                  <a
+                    href={`mailto:${coach.email}`}
+                    className="text-blue-600 text-xs hover:underline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {coach.email}
+                  </a>
+                </div>
+              ))
+            )}
             {college.website && (
               <a
                 href={college.website}
@@ -134,7 +157,7 @@ export default function CollegeCard({
                 className="inline-block text-xs text-blue-600 hover:underline mt-2"
                 onClick={(e) => e.stopPropagation()}
               >
-                Visit Athletics Website →
+                {college.division === 'ECNL' ? 'Visit Club Website' : 'Visit Athletics Website'} →
               </a>
             )}
           </div>
