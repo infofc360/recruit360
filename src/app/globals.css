@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --surface: #161616;
+  --surface-2: #1e1e1e;
+  --border: #2a2a2a;
+  --accent: #c8f000;
+  --accent-dark: #a0c000;
+  --muted: #888888;
 }
 
 @theme inline {
@@ -27,8 +33,35 @@ body {
 
 .leaflet-popup-content-wrapper {
   border-radius: 8px;
+  background: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.leaflet-popup-tip {
+  background: #1e1e1e;
 }
 
 .leaflet-popup-content {
   margin: 12px;
+}
+
+.leaflet-control-attribution {
+  background: rgba(10,10,10,0.7) !important;
+  color: #888 !important;
+}
+
+.leaflet-control-attribution a {
+  color: #888 !important;
+}
+
+.leaflet-control-zoom a {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+  border-color: #2a2a2a !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #2a2a2a !important;
 }

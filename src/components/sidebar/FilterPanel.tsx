@@ -102,15 +102,17 @@ export default function FilterPanel({
     filters.searchQuery ||
     filters.locationSearch;
 
+  const selectClass = "appearance-none bg-[#1e1e1e] border border-[#2a2a2a] text-white rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-1 focus:ring-[#c8f000] focus:border-[#c8f000] cursor-pointer";
+
   return (
-    <div className="bg-white border-b border-gray-200 p-4">
-      <div className="flex flex-wrap items-center gap-4">
+    <div className="bg-[#111111] border-b border-[#2a2a2a] p-4 flex-shrink-0">
+      <div className="flex flex-wrap items-center gap-3">
         {/* Search */}
         <div className="flex-1 min-w-[200px]">
           <div className="relative">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#888]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -122,7 +124,7 @@ export default function FilterPanel({
               placeholder={mode === 'ecnl' ? 'Search by club name' : 'Search by school name'}
               value={filters.searchQuery}
               onChange={(e) => onFiltersChange({ ...filters, searchQuery: e.target.value })}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full pl-9 pr-4 py-2 bg-[#1e1e1e] border border-[#2a2a2a] text-white placeholder-[#555] rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-[#c8f000] focus:border-[#c8f000]"
             />
           </div>
         </div>
@@ -130,15 +132,15 @@ export default function FilterPanel({
         {/* Division toggles — hidden in ECNL mode */}
         {mode !== 'ecnl' && (
           <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-600 font-medium">Division:</span>
+            <span className="text-xs text-[#888] font-medium uppercase tracking-wider">Division:</span>
             {divisions.map(div => (
               <button
                 key={div}
                 onClick={() => toggleDivision(div)}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                   filters.divisions.includes(div)
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-[#c8f000] text-black'
+                    : 'bg-[#1e1e1e] text-[#888] border border-[#2a2a2a] hover:border-[#c8f000] hover:text-[#c8f000]'
                 }`}
               >
                 {div}
@@ -157,7 +159,7 @@ export default function FilterPanel({
                   toggleRegion(e.target.value as Region);
                 }
               }}
-              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className={selectClass}
             >
               <option value="">
                 {filters.regions.length > 0
@@ -173,7 +175,7 @@ export default function FilterPanel({
             </select>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-[#888] pointer-events-none"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -193,7 +195,7 @@ export default function FilterPanel({
                   toggleState(e.target.value);
                 }
               }}
-              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className={selectClass}
             >
               <option value="">
                 {filters.states.length > 0
@@ -209,7 +211,7 @@ export default function FilterPanel({
             </select>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+              className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-[#888] pointer-events-none"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -228,7 +230,7 @@ export default function FilterPanel({
                 toggleConference(e.target.value);
               }
             }}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            className={selectClass}
           >
             <option value="">
               {filters.conferences.length > 0
@@ -244,7 +246,7 @@ export default function FilterPanel({
           </select>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+            className="h-4 w-4 absolute right-2 top-1/2 -translate-y-1/2 text-[#888] pointer-events-none"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -257,7 +259,7 @@ export default function FilterPanel({
         {hasActiveFilters && (
           <button
             onClick={clearAllFilters}
-            className="text-sm text-blue-600 hover:text-blue-800"
+            className="text-sm text-[#888] hover:text-[#c8f000] transition-colors"
           >
             Clear filters
           </button>
@@ -265,8 +267,8 @@ export default function FilterPanel({
       </div>
 
       {/* Location Search */}
-      <div className="mt-3 pt-3 border-t border-gray-100">
-        <p className="text-xs text-gray-500 font-medium mb-2">Search by Location</p>
+      <div className="mt-3 pt-3 border-t border-[#2a2a2a]">
+        <p className="text-xs text-[#555] font-medium uppercase tracking-wider mb-2">Search by Location</p>
         <LocationSearchPanel
           locationSearch={filters.locationSearch}
           onLocationChange={handleLocationChange}
@@ -277,11 +279,11 @@ export default function FilterPanel({
       {(filters.regions.length > 0 || filters.states.length > 0 || filters.conferences.length > 0 || filters.locationSearch) && (
         <div className="flex flex-wrap gap-2 mt-3">
           {filters.locationSearch && (
-            <span className="inline-flex items-center gap-1 bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">
+            <span className="inline-flex items-center gap-1 bg-[#1e1e1e] border border-[#c8f000]/40 text-[#c8f000] text-xs px-2 py-1 rounded-full">
               {filters.locationSearch.label} ({filters.locationSearch.radiusMiles} mi)
               <button
                 onClick={() => handleLocationChange(null)}
-                className="hover:bg-amber-200 rounded-full p-0.5"
+                className="hover:text-white rounded-full p-0.5"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -292,12 +294,12 @@ export default function FilterPanel({
           {filters.regions.map(region => (
             <span
               key={region}
-              className="inline-flex items-center gap-1 bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+              className="inline-flex items-center gap-1 bg-[#1e1e1e] border border-[#2a2a2a] text-[#aaa] text-xs px-2 py-1 rounded-full"
             >
               {region}
               <button
                 onClick={() => toggleRegion(region)}
-                className="hover:bg-green-200 rounded-full p-0.5"
+                className="hover:text-white rounded-full p-0.5"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -308,12 +310,12 @@ export default function FilterPanel({
           {filters.states.map(state => (
             <span
               key={state}
-              className="inline-flex items-center gap-1 bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
+              className="inline-flex items-center gap-1 bg-[#1e1e1e] border border-[#2a2a2a] text-[#aaa] text-xs px-2 py-1 rounded-full"
             >
               {STATE_NAMES[state] || state}
               <button
                 onClick={() => toggleState(state)}
-                className="hover:bg-purple-200 rounded-full p-0.5"
+                className="hover:text-white rounded-full p-0.5"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -324,12 +326,12 @@ export default function FilterPanel({
           {filters.conferences.map(conf => (
             <span
               key={conf}
-              className="inline-flex items-center gap-1 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
+              className="inline-flex items-center gap-1 bg-[#1e1e1e] border border-[#2a2a2a] text-[#aaa] text-xs px-2 py-1 rounded-full"
             >
               {conf}
               <button
                 onClick={() => toggleConference(conf)}
-                className="hover:bg-blue-200 rounded-full p-0.5"
+                className="hover:text-white rounded-full p-0.5"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

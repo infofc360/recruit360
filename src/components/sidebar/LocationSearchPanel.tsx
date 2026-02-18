@@ -86,12 +86,12 @@ export default function LocationSearchPanel({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-          className="flex-1 px-3 py-1.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="flex-1 px-3 py-1.5 bg-[#1e1e1e] border border-[#2a2a2a] text-white placeholder-[#555] rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-[#c8f000] focus:border-[#c8f000]"
         />
         <button
           onClick={handleSearch}
           disabled={loading || !query.trim()}
-          className="px-3 py-1.5 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-3 py-1.5 bg-[#c8f000] text-black rounded-lg text-sm font-medium hover:bg-[#a0c000] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           {loading ? '...' : 'Go'}
         </button>
@@ -99,7 +99,7 @@ export default function LocationSearchPanel({
           onClick={handleGPS}
           disabled={loading}
           title="Use my location"
-          className="px-2 py-1.5 border border-gray-300 rounded-lg text-sm hover:bg-gray-50 disabled:opacity-50"
+          className="px-2 py-1.5 border border-[#2a2a2a] bg-[#1e1e1e] text-[#888] rounded-lg text-sm hover:border-[#c8f000] hover:text-[#c8f000] disabled:opacity-40 transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -109,11 +109,11 @@ export default function LocationSearchPanel({
       </div>
 
       <div className="flex items-center gap-2">
-        <label className="text-xs text-gray-500">Radius:</label>
+        <label className="text-xs text-[#555] uppercase tracking-wider">Radius:</label>
         <select
           value={radius}
           onChange={(e) => handleRadiusChange(Number(e.target.value))}
-          className="appearance-none bg-white border border-gray-300 rounded px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+          className="appearance-none bg-[#1e1e1e] border border-[#2a2a2a] text-white rounded px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-[#c8f000] cursor-pointer"
         >
           {RADIUS_OPTIONS.map((r) => (
             <option key={r} value={r}>{r} miles</option>
@@ -122,14 +122,14 @@ export default function LocationSearchPanel({
         {locationSearch && (
           <button
             onClick={handleClear}
-            className="text-xs text-red-600 hover:text-red-800 ml-auto"
+            className="text-xs text-[#888] hover:text-[#c8f000] ml-auto transition-colors"
           >
             Clear location
           </button>
         )}
       </div>
 
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-400">{error}</p>}
     </div>
   );
 }

@@ -39,9 +39,9 @@ export default function CollegeList({
 
   return (
     <div className="flex flex-col h-full">
-      <div className="p-4 border-b border-gray-200 bg-white flex items-center justify-between">
-        <p className="text-sm text-gray-600">
-          <span className="font-semibold text-gray-800">{colleges.length}</span> Schools
+      <div className="px-4 py-3 border-b border-[#2a2a2a] flex items-center justify-between">
+        <p className="text-sm text-[#888]">
+          <span className="font-semibold text-white">{colleges.length}</span> Schools
         </p>
         {onToggleCheck && colleges.length > 0 && (
           <button
@@ -53,16 +53,16 @@ export default function CollegeList({
                 onSelectAll?.();
               }
             }}
-            className="text-xs text-blue-600 hover:text-blue-800"
+            className="text-xs text-[#888] hover:text-[#c8f000] transition-colors"
           >
             {colleges.every(c => selectedCollegeIds?.has(c.id)) ? 'Deselect All' : 'Select All'}
           </button>
         )}
       </div>
 
-      <div ref={listRef} className="flex-1 overflow-y-auto p-4 space-y-3">
+      <div ref={listRef} className="flex-1 overflow-y-auto p-3 space-y-2">
         {colleges.length === 0 ? (
-          <div className="text-center py-8 text-gray-500">
+          <div className="text-center py-8 text-[#555]">
             <p>No colleges match your filters</p>
           </div>
         ) : (

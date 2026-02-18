@@ -10,20 +10,20 @@ export default function SelectionActionBar({ count, onEmail, onClear }: Selectio
   if (count === 0) return null;
 
   return (
-    <div className="sticky bottom-0 bg-white border-t border-gray-200 p-3 flex items-center justify-between shadow-lg">
-      <span className="text-sm font-medium text-gray-700">
+    <div className="sticky bottom-0 bg-[#111111] border-t border-[#2a2a2a] p-3 flex items-center justify-between">
+      <span className="text-sm font-medium text-[#aaa]">
         {count} school{count !== 1 ? 's' : ''} selected
       </span>
       <div className="flex gap-2">
         <button
           onClick={onClear}
-          className="px-3 py-1.5 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50"
+          className="px-3 py-1.5 text-sm text-[#888] hover:text-white border border-[#2a2a2a] rounded-lg hover:border-[#3a3a3a] transition-colors"
         >
           Clear
         </button>
         <button
           onClick={onEmail}
-          className="px-3 py-1.5 text-sm text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+          className="px-3 py-1.5 text-sm text-black bg-[#c8f000] rounded-lg hover:bg-[#a0c000] font-medium transition-colors"
         >
           Send Email
         </button>

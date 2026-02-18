@@ -26,16 +26,16 @@ export default function CollegeCard({
 
   return (
     <div
-      className={`border rounded-lg bg-white transition-all cursor-pointer ${
+      className={`border rounded-lg bg-[#1a1a1a] transition-all cursor-pointer ${
         isSelected
-          ? 'border-blue-500 shadow-lg ring-2 ring-blue-200'
-          : 'border-gray-200 hover:border-gray-300 hover:shadow-md'
+          ? 'border-[#c8f000] shadow-[0_0_12px_rgba(200,240,0,0.15)]'
+          : 'border-[#2a2a2a] hover:border-[#3a3a3a]'
       }`}
       onClick={() => onSelect(college.id)}
       onMouseEnter={() => onHover(college.id)}
       onMouseLeave={() => onHover(null)}
     >
-      <div className="p-4">
+      <div className="p-3">
         <div className="flex items-start gap-3">
           {/* Checkbox */}
           {onToggleCheck && (
@@ -44,25 +44,27 @@ export default function CollegeCard({
               checked={isChecked ?? false}
               onChange={() => onToggleCheck(college.id)}
               onClick={(e) => e.stopPropagation()}
-              className="mt-3 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer flex-shrink-0"
+              className="mt-2.5 h-4 w-4 rounded border-[#3a3a3a] bg-[#1e1e1e] accent-[#c8f000] cursor-pointer flex-shrink-0"
             />
           )}
 
           {/* Logo placeholder */}
-          <div className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+          <div className={`w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0 ${
+            isSelected ? 'bg-[#c8f000] text-black' : 'bg-[#2a2a2a] text-[#c8f000]'
+          }`}>
             {college.name.charAt(0)}
           </div>
 
           <div className="flex-1 min-w-0">
-            <h3 className="text-blue-600 font-medium text-sm hover:underline truncate">
+            <h3 className="text-white font-medium text-sm truncate">
               {college.name}
             </h3>
-            <p className="text-gray-500 text-xs mt-0.5">
+            <p className="text-[#888] text-xs mt-0.5">
               {college.division === 'ECNL'
                 ? college.conference
                 : `${college.city}, ${college.state}`}
               {distanceMiles != null && (
-                <span className="text-amber-600 font-medium"> ({distanceMiles} mi)</span>
+                <span className="text-[#c8f000] font-medium"> ({distanceMiles} mi)</span>
               )}
               {' '}&bull; {college.division}
             </p>
@@ -70,14 +72,14 @@ export default function CollegeCard({
 
           {/* Location icon */}
           <button
-            className="text-gray-400 hover:text-blue-500 p-1"
+            className="text-[#555] hover:text-[#c8f000] p-1 transition-colors"
             onClick={(e) => {
               e.stopPropagation();
               onSelect(college.id);
             }}
             title="Show on map"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
@@ -85,17 +87,17 @@ export default function CollegeCard({
         </div>
 
         {/* Conference badge */}
-        <div className="mt-2">
-          <span className="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded">
+        <div className="mt-2 ml-12">
+          <span className="inline-block bg-[#222] border border-[#2a2a2a] text-[#888] text-xs px-2 py-0.5 rounded">
             {college.conference}
           </span>
         </div>
       </div>
 
       {/* Expandable section */}
-      <div className="border-t border-gray-100">
+      <div className="border-t border-[#2a2a2a]">
         <button
-          className="w-full px-4 py-2 flex items-center justify-between text-xs text-gray-500 hover:bg-gray-50"
+          className="w-full px-3 py-2 flex items-center justify-between text-xs text-[#555] hover:text-[#888] hover:bg-[#1e1e1e] transition-colors"
           onClick={(e) => {
             e.stopPropagation();
             setIsExpanded(!isExpanded);
@@ -106,7 +108,7 @@ export default function CollegeCard({
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`h-4 w-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+            className={`h-3.5 w-3.5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -116,32 +118,30 @@ export default function CollegeCard({
         </button>
 
         {isExpanded && (
-          <div className="px-4 pb-4 space-y-3">
+          <div className="px-3 pb-3 space-y-3 bg-[#141414]">
             {college.division === 'ECNL' ? (
-              // ECNL: show emails directly
               college.coaches.length > 0 ? (
                 college.coaches.map((coach, idx) => (
                   <a
                     key={idx}
                     href={`mailto:${coach.email}`}
-                    className="block text-blue-600 text-xs hover:underline"
+                    className="block text-[#c8f000] text-xs hover:underline"
                     onClick={(e) => e.stopPropagation()}
                   >
                     {coach.email}
                   </a>
                 ))
               ) : (
-                <p className="text-gray-400 text-xs">No contact emails available</p>
+                <p className="text-[#555] text-xs">No contact emails available</p>
               )
             ) : (
-              // Collegiate: show full coach info
               college.coaches.map((coach, idx) => (
                 <div key={idx} className="text-sm">
-                  <p className="font-medium text-gray-800">{coach.name}</p>
-                  <p className="text-gray-500 text-xs">{coach.title}</p>
+                  <p className="font-medium text-white text-xs">{coach.name}</p>
+                  <p className="text-[#555] text-xs">{coach.title}</p>
                   <a
                     href={`mailto:${coach.email}`}
-                    className="text-blue-600 text-xs hover:underline"
+                    className="text-[#c8f000] text-xs hover:underline"
                     onClick={(e) => e.stopPropagation()}
                   >
                     {coach.email}
@@ -154,7 +154,7 @@ export default function CollegeCard({
                 href={college.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-xs text-blue-600 hover:underline mt-2"
+                className="inline-block text-xs text-[#888] hover:text-[#c8f000] transition-colors mt-1"
                 onClick={(e) => e.stopPropagation()}
               >
                 {college.division === 'ECNL' ? 'Visit Club Website' : 'Visit Athletics Website'} →

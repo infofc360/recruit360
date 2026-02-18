@@ -13,8 +13,8 @@ import EmailModal from '@/components/email/EmailModal';
 const CollegeMap = dynamic(() => import('@/components/map/CollegeMap'), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-100">
-      <div className="text-gray-500">Loading map...</div>
+    <div className="w-full h-full flex items-center justify-center bg-[#0a0a0a]">
+      <div className="text-[#888]">Loading map...</div>
     </div>
   ),
 });
@@ -213,10 +213,10 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="h-screen flex items-center justify-center bg-gray-100">
+      <div className="h-screen flex items-center justify-center bg-[#0a0a0a]">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading colleges...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#c8f000] mx-auto mb-4"></div>
+          <p className="text-[#888]">Loading colleges...</p>
         </div>
       </div>
     );
@@ -224,12 +224,12 @@ export default function Home() {
 
   if (error) {
     return (
-      <div className="h-screen flex items-center justify-center bg-gray-100">
+      <div className="h-screen flex items-center justify-center bg-[#0a0a0a]">
         <div className="text-center">
-          <p className="text-red-600 mb-4">Error: {error}</p>
+          <p className="text-red-400 mb-4">Error: {error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            className="px-4 py-2 bg-[#c8f000] text-black font-medium rounded hover:bg-[#a0c000]"
           >
             Retry
           </button>
@@ -239,21 +239,21 @@ export default function Home() {
   }
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-[#0a0a0a]">
       {/* Header */}
-      <header className="bg-slate-800 text-white px-6 py-4 flex items-center justify-between">
+      <header className="bg-[#111111] border-b border-[#2a2a2a] text-white px-6 py-3 flex items-center justify-between flex-shrink-0">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center font-bold text-sm">
+          <div className="w-8 h-8 bg-[#c8f000] rounded flex items-center justify-center font-bold text-sm text-black">
             R
           </div>
-          <h1 className="text-xl font-semibold">Recruit360</h1>
-          <div className="flex items-center gap-1 ml-4 bg-slate-700 rounded-lg p-1">
+          <h1 className="text-lg font-semibold tracking-tight">Recruit360</h1>
+          <div className="flex items-center gap-1 ml-4 bg-[#1e1e1e] rounded-lg p-1 border border-[#2a2a2a]">
             <button
               onClick={() => switchMode('collegiate')}
               className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
                 mode === 'collegiate'
-                  ? 'bg-blue-600 text-white'
-                  : 'text-slate-300 hover:text-white'
+                  ? 'bg-[#c8f000] text-black'
+                  : 'text-[#888] hover:text-white'
               }`}
             >
               Collegiate
@@ -262,15 +262,15 @@ export default function Home() {
               onClick={() => switchMode('ecnl')}
               className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
                 mode === 'ecnl'
-                  ? 'bg-emerald-600 text-white'
-                  : 'text-slate-300 hover:text-white'
+                  ? 'bg-[#c8f000] text-black'
+                  : 'text-[#888] hover:text-white'
               }`}
             >
               ECNL
             </button>
           </div>
         </div>
-        <nav className="text-sm text-slate-300">
+        <nav className="text-sm text-[#888]">
           {mode === 'ecnl' ? 'ECNL Club Database' : 'College Soccer Database'}
         </nav>
       </header>
@@ -287,7 +287,7 @@ export default function Home() {
       {/* Main content */}
       <div className="flex-1 flex overflow-hidden">
         {/* Sidebar */}
-        <div className="w-[400px] border-r border-gray-200 bg-gray-50 flex flex-col overflow-hidden">
+        <div className="w-[400px] border-r border-[#2a2a2a] bg-[#111111] flex flex-col overflow-hidden">
           <CollegeList
             colleges={filteredColleges}
             selectedId={selectedId}

@@ -34,8 +34,10 @@ export default function CollegeMap({
 
     mapRef.current = L.map(containerRef.current).setView([39.8283, -98.5795], 4);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
     }).addTo(mapRef.current);
 
     return () => {
@@ -60,19 +62,19 @@ export default function CollegeMap({
     // Add new markers
     validColleges.forEach(college => {
       const marker = L.circleMarker([college.lat, college.lng], {
-        radius: 8,
-        fillColor: '#dc2626',
-        color: '#991b1b',
-        weight: 2,
+        radius: 7,
+        fillColor: '#c8f000',
+        color: '#0a0a0a',
+        weight: 1.5,
         opacity: 1,
-        fillOpacity: 0.8
+        fillOpacity: 0.85
       });
 
       marker.bindPopup(`
-        <div style="min-width: 200px;">
-          <strong style="font-size: 14px;">${college.name}</strong>
-          <p style="margin: 4px 0; color: #666;">${college.city}</p>
-          <p style="margin: 4px 0;"><span style="background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 4px; font-size: 12px;">${college.division}</span> <span style="color: #666; font-size: 12px;">${college.conference}</span></p>
+        <div style="min-width: 180px;">
+          <strong style="font-size: 13px; color: #ffffff;">${college.name}</strong>
+          <p style="margin: 4px 0; color: #888; font-size: 12px;">${college.city}${college.state ? ', ' + college.state : ''}</p>
+          <p style="margin: 4px 0;"><span style="background: #c8f000; color: #000; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">${college.division}</span> <span style="color: #666; font-size: 11px; margin-left: 4px;">${college.conference}</span></p>
         </div>
       `);
 
@@ -98,10 +100,11 @@ export default function CollegeMap({
       const isHovered = id === hoveredId;
 
       marker.setStyle({
-        radius: isSelected || isHovered ? 12 : 8,
-        fillColor: isSelected ? '#2563eb' : '#dc2626',
-        color: isSelected ? '#1d4ed8' : '#991b1b',
-        weight: isSelected || isHovered ? 3 : 2,
+        radius: isSelected ? 11 : isHovered ? 9 : 7,
+        fillColor: isSelected ? '#ffffff' : '#c8f000',
+        color: isSelected ? '#c8f000' : '#0a0a0a',
+        weight: isSelected ? 2.5 : isHovered ? 2 : 1.5,
+        fillOpacity: isSelected ? 1 : 0.85,
       });
 
       if (isSelected) {
@@ -139,20 +142,20 @@ export default function CollegeMap({
     // Radius circle
     const circle = L.circle([locationSearch.lat, locationSearch.lng], {
       radius: milesToMeters(locationSearch.radiusMiles),
-      color: '#d97706',
-      fillColor: '#fbbf24',
-      fillOpacity: 0.1,
-      weight: 2,
+      color: '#c8f000',
+      fillColor: '#c8f000',
+      fillOpacity: 0.05,
+      weight: 1.5,
       dashArray: '6 4',
     });
     circle.addTo(group);
 
     // Center marker
     const centerMarker = L.circleMarker([locationSearch.lat, locationSearch.lng], {
-      radius: 10,
-      fillColor: '#d97706',
-      color: '#92400e',
-      weight: 3,
+      radius: 8,
+      fillColor: '#c8f000',
+      color: '#0a0a0a',
+      weight: 2,
       fillOpacity: 1,
     });
     centerMarker.bindPopup(`<strong>${locationSearch.label}</strong><br/>${locationSearch.radiusMiles} mile radius`);
@@ -172,8 +175,8 @@ export default function CollegeMap({
 
       if (!isSelected && !isHovered && isChecked) {
         marker.setStyle({
-          color: '#16a34a',
-          weight: 3,
+          color: '#ffffff',
+          weight: 2.5,
         });
       }
     });
