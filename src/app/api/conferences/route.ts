@@ -9,20 +9,25 @@ export async function GET() {
   }
 
   try {
-    // Get distinct conferences from colleges table
-    const { data, error } = await supabase
-      .from('colleges')
-      .select('conference')
-      .order('conference');
+    // Get conferences from both colleges (NCAA) and ecnl_clubs tables
+    const [{ data: ncaaData, error: ncaaError }, { data: ecnlData, error: ecnlError }] = await Promise.all([
+      supabase.from('colleges').select('conference'),
+      supabase.from('ecnl_clubs').select('conference'),
+    ]);
 
-    if (error) {
-      console.error('Error fetching conferences:', error);
-      // Fall back to local data on error
+    if (ncaaError) {
+      console.error('Error fetching NCAA conferences:', ncaaError);
+      return NextResponse.json(conferencesData);
+    }
+    if (ecnlError) {
+      console.error('Error fetching ECNL conferences:', ecnlError);
       return NextResponse.json(conferencesData);
     }
 
-    // Extract unique conferences
-    const conferences = [...new Set(data.map(c => c.conference))].filter(Boolean);
+    // Merge and deduplicate conferences from both tables
+    const conferences = [...new Set([...(ncaaData ?? []), ...(ecnlData ?? [])].map(c => c.conference))]
+      .filter(Boolean)
+      .sort();
 
     return NextResponse.json(conferences);
   } catch (error) {

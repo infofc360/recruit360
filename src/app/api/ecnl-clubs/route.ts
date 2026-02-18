@@ -10,11 +10,10 @@ export async function GET() {
   }
 
   try {
-    // Fetch ECNL clubs from colleges table
+    // Fetch ECNL clubs from dedicated ecnl_clubs table
     const { data: clubs, error: clubsError } = await supabase
-      .from('colleges')
+      .from('ecnl_clubs')
       .select('*')
-      .eq('division', 'ECNL')
       .order('name');
 
     if (clubsError) {
@@ -50,7 +49,7 @@ export async function GET() {
     const transformedClubs: College[] = (clubs as DBCollege[]).map(c => ({
       id: c.id,
       name: c.name,
-      division: c.division,
+      division: 'ECNL' as const,
       conference: c.conference,
       city: c.city || '',
       state: c.state || '',
