@@ -33,8 +33,8 @@
     "city": "",
     "state": "",
     "region": "Southwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 29.825,
+    "lng": -95.495,
     "coaches": [
       {
         "name": "Contact",
@@ -62,8 +62,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.284,
+    "lng": -111.597,
     "coaches": [
       {
         "name": "Contact",
@@ -204,8 +204,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 44.9234,
+    "lng": -123.02,
     "coaches": [
       {
         "name": "Contact",
@@ -223,8 +223,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 34.4926,
+    "lng": -82.918,
     "coaches": [
       {
         "name": "Contact",
@@ -341,8 +341,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 47.674,
+    "lng": -122.1215,
     "coaches": [],
     "website": "https://www.crossfiresoccer.org/about-us/contact/"
   },
@@ -354,8 +354,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 47.7062,
+    "lng": -122.1395,
     "coaches": [],
     "website": "https://www.crossfiresoccer.org/"
   },
@@ -367,8 +367,8 @@
     "city": "",
     "state": "",
     "region": "Southwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 32.92,
+    "lng": -96.87,
     "coaches": [],
     "website": "https://playclubsoccer.org/club/dksc"
   },
@@ -412,8 +412,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.388,
+    "lng": -121.968,
     "coaches": [],
     "website": "https://www.deanzaforce.org/about-us/contact-force"
   },
@@ -425,8 +425,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 32.9667,
+    "lng": -117.2272,
     "coaches": [],
     "website": "https://legendsfcsd.com/"
   },
@@ -438,8 +438,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 39.68,
+    "lng": -75.75,
     "coaches": [
       {
         "name": "Contact",
@@ -476,8 +476,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.0583,
+    "lng": -74.4057,
     "coaches": [],
     "website": "https://playclubsoccer.org/club/east-coast-fc"
   },
@@ -489,8 +489,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 47.6219,
+    "lng": -122.1997,
     "coaches": [
       {
         "name": "Contact",
@@ -513,8 +513,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 41.837,
+    "lng": -87.945,
     "coaches": [],
     "website": "https://www.eclipseselect.org/"
   },
@@ -526,8 +526,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 44.052071,
+    "lng": -123.086754,
     "coaches": [],
     "website": "https://emfc.org/"
   },
@@ -616,8 +616,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 45.5401,
+    "lng": -122.9094,
     "coaches": [
       {
         "name": "Contact",
@@ -635,8 +635,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 41.8609,
+    "lng": -87.9779,
     "coaches": [],
     "website": "https://fcpride.org/"
   },
@@ -648,8 +648,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 42.162,
+    "lng": -71.4328,
     "coaches": [
       {
         "name": "Contact",
@@ -686,8 +686,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 28.675,
+    "lng": -81.258,
     "coaches": [
       {
         "name": "Contact",
@@ -770,8 +770,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 38.3032,
+    "lng": -77.4605,
     "coaches": [
       {
         "name": "Contact",
@@ -789,8 +789,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 41.1396,
+    "lng": -96.3475,
     "coaches": [
       {
         "name": "Contact",
@@ -833,8 +833,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.9526,
+    "lng": -84.5499,
     "coaches": [],
     "website": "https://www.gsasoccer.com/"
   },
@@ -846,8 +846,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.4484,
+    "lng": -112.074,
     "coaches": [
       {
         "name": "Contact",
@@ -913,8 +913,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 41.137,
+    "lng": -81.865,
     "coaches": [
       {
         "name": "Contact",
@@ -983,8 +983,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 39.1031,
+    "lng": -84.512,
     "coaches": [
       {
         "name": "Contact",
@@ -1021,8 +1021,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.6461,
+    "lng": -111.94,
     "coaches": [],
     "website": "https://larocafc.com/contact/"
   },
@@ -1034,8 +1034,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.676,
+    "lng": -117.908,
     "coaches": [],
     "website": "https://slammersfc.org/contact/"
   },
@@ -1109,8 +1109,8 @@
     "city": "",
     "state": "MD",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 39.1754,
+    "lng": -77.2619,
     "coaches": [
       {
         "name": "Contact",
@@ -1128,8 +1128,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.9056,
+    "lng": -74.49,
     "coaches": [
       {
         "name": "Contact",
@@ -1247,8 +1247,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.3758,
+    "lng": -122.131,
     "coaches": [
       {
         "name": "Contact",
@@ -1266,8 +1266,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 38.953,
+    "lng": -77.0721,
     "coaches": [
       {
         "name": "Contact",
@@ -1419,8 +1419,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 28.5410645,
+    "lng": -81.389035,
     "coaches": [
       {
         "name": "Contact",
@@ -1438,8 +1438,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 47.4705,
+    "lng": -122.2562,
     "coaches": [],
     "website": "https://www.pacificnorthwestsoccerclub.org/contact"
   },
@@ -1510,8 +1510,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 39.945,
+    "lng": -75.584,
     "coaches": [
       {
         "name": "Contact",
@@ -1529,8 +1529,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.239584,
+    "lng": -75.189479,
     "coaches": [
       {
         "name": "Contact",
@@ -1586,8 +1586,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.4361,
+    "lng": -80.0094,
     "coaches": [],
     "website": "https://www.riverhounds.com/contact-us/"
   },
@@ -1599,8 +1599,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.6699,
+    "lng": -121.8887,
     "coaches": [],
     "website": "https://pleasantonrage.org/contact-us/"
   },
@@ -1612,8 +1612,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 45.5152,
+    "lng": -122.6784,
     "coaches": [
       {
         "name": "Contact",
@@ -1631,8 +1631,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.287616,
+    "lng": -74.158,
     "coaches": [],
     "website": "https://princetonsocceracademy.com/monmouth/"
   },
@@ -1644,8 +1644,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 38.257,
+    "lng": -85.713,
     "coaches": [],
     "website": "https://www.loucityracingacademy.com/"
   },
@@ -1681,8 +1681,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 34.3917,
+    "lng": -118.5426,
     "coaches": [
       {
         "name": "Contact",
@@ -1733,8 +1733,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.5407,
+    "lng": -77.436,
     "coaches": [
       {
         "name": "Contact",
@@ -1771,8 +1771,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 48.5367,
+    "lng": -123.0969,
     "coaches": [
       {
         "name": "Contact",
@@ -1803,8 +1803,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 42.215,
+    "lng": -71.002,
     "coaches": [
       {
         "name": "Contact",
@@ -1841,8 +1841,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 39.74,
+    "lng": -75.15,
     "coaches": [
       {
         "name": "Contact",
@@ -1880,8 +1880,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.6189,
+    "lng": -117.9289,
     "coaches": [],
     "website": "https://slammersfc.org/contact/"
   },
@@ -1906,8 +1906,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.4908,
+    "lng": -117.6609,
     "coaches": [],
     "website": "https://bluessoccer.com/about"
   },
@@ -1919,8 +1919,8 @@
     "city": "",
     "state": "",
     "region": "Southwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.1581,
+    "lng": -96.8236,
     "coaches": [
       {
         "name": "Contact",
@@ -1938,8 +1938,8 @@
     "city": "",
     "state": "",
     "region": "Midwest",
-    "lat": 0,
-    "lng": 0,
+    "lat": 38.9056,
+    "lng": -94.6751,
     "coaches": [],
     "website": "https://clubs.bluesombrero.com/Default.aspx?tabid=48597"
   },
@@ -1998,8 +1998,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.6469,
+    "lng": -117.688,
     "coaches": [],
     "website": "https://www.strikersfc.com/"
   },
@@ -2011,8 +2011,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 26.1674,
+    "lng": -80.2564,
     "coaches": [
       {
         "name": "Contact",
@@ -2060,8 +2060,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 42.9356,
+    "lng": -70.8784,
     "coaches": [
       {
         "name": "Contact",
@@ -2136,8 +2136,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 36.1627,
+    "lng": -86.7816,
     "coaches": [
       {
         "name": "Contact",
@@ -2193,8 +2193,8 @@
     "city": "",
     "state": "",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 33.465,
+    "lng": -111.758,
     "coaches": [
       {
         "name": "Contact",
@@ -2212,8 +2212,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 37.1232,
+    "lng": -76.508,
     "coaches": [
       {
         "name": "Contact",
@@ -2231,8 +2231,8 @@
     "city": "",
     "state": "WA",
     "region": "West",
-    "lat": 0,
-    "lng": 0,
+    "lat": 46.9787,
+    "lng": -122.9007,
     "coaches": [],
     "website": "https://www.washingtonpremierfc.com/about-us/contact-us/"
   },
@@ -2244,8 +2244,8 @@
     "city": "",
     "state": "",
     "region": "Northeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 42.825,
+    "lng": -78.636,
     "coaches": [
       {
         "name": "Contact",
@@ -2308,8 +2308,8 @@
     "city": "",
     "state": "",
     "region": "Southeast",
-    "lat": 0,
-    "lng": 0,
+    "lat": 34.203584,
+    "lng": -77.9369,
     "coaches": [],
     "website": "https://www.hammerheads.soccer/contact"
   },
